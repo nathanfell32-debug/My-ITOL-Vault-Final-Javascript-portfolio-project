@@ -12,3 +12,10 @@ vault.html (All Entries): Create a simple layout where entries appear in ful-wid
 rather than a grid.
 Navigation: Ensure the "New Entry" button and the "Profile Icon" are wrapped in <a> tags to
 move between these files.
+
+Milestone 2: Capturing Input
+In your JavaScript for new-entry.html:
+Select the form and the "Save Entry" button using document.querySelector.
+Add an event listener to the "Save" button.
+Practice puling the text out of the inputs using the .value property and logging it to the
+console.

@@ -4,18 +4,45 @@
         <title>My ITOL vault javascript Project</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+            }
+            .card {
+                border: 1px; solid #ccc;
+                padding: 20px;
+                background: #f9f9f9;
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>My ITOL vault</h1>
+            <nav>
+                <a href="new-entry.html">
+                    <button>Create New Entry</button>
+                </a>
+                <!--Profile icon here-->
+                <a href="vault.html">
+                    <img src="https://via.placeholder.com/40" alt="Profile" width="40">
+                </a>
+            </nav>
         </header>
+
         <main>
             <section>
                 <h2>Welcome</h2>
                 <p>Your personal vault for storing reflections</p>
-
-                <a href="new-entry.html">Create a new Entry</a>
+            </section>
+            <section class="grid-container">
+                <div class="card">Test Card 1</div>
+                <div class="card">Test Card 2</div>
+                <div class="card">Test Card 3</div>
+                <div class="card">Test Card 4</div>
+                <div class="card">Test Card 5</div>
             </section>
         </main>
 

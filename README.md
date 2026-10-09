@@ -20,15 +20,15 @@ Add an event listener to the "Save" button.
 Practice puling the text out of the inputs using the .value property and logging it to the
 console.
 
-Milestone 3: saving to localStorage - Created an `entries` array to hold vault entries.
+Milestone 3: completed : saving to localStorage - Created an `entries` array to hold vault entries.
  Created an object for each new entry containing the title and reflection body.
  
  Used the `.push()` array method to add new entry objects to the `entries` array.
  
  Used `JSON.stringify()` to convert the entries array into a JSON string.
  
- Used `localStorage.setItem()` to save the entry data in the browser.
- 
  Tested the storage using browser DevTools and confirmed that the data remains in localStorage after refreshing the page.
+ -stored the JSON string in browser storage using localStorage.setItem()
+ -retrieved saved data using localStorage.getItem()
  
 

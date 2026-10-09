@@ -4,8 +4,12 @@ const titleInput = document.querySelector('#entryTitle');
 const bodyInput = document.querySelector('#entryBody');
 const saveButton = document.querySelector('#saveEntryButton');
 
-// create an empty array to store each new vault entry
-const entries = [];
+// retrieve any previously saved entries from localStorage
+    const storedEntries = localStorage.getItem('vaultEntries');
+    console.log(storedEntries);
+
+// use saved entries if they exist, otherwise start with an empty array
+    const entries = storedEntries ? JSON.parse(storedEntries) : [];
 
 // listen for the save button clicks
 // this waits for the user to press save before running the code
@@ -24,8 +28,7 @@ saveButton.addEventListener('click', () => {
 // save the JSON string in localStorage so the entries remain after a page refresh
     localStorage.setItem('vaultEntries', entriesJSON);
 
-    console.log(entries);
-    console.log(entriesJSON);
+    
     console.log('Title', title);
     console.log('Body', body);
 });

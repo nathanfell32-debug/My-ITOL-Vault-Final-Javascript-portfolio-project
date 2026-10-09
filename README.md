@@ -30,5 +30,16 @@ Milestone 3: completed : saving to localStorage - Created an `entries` array to 
  Tested the storage using browser DevTools and confirmed that the data remains in localStorage after refreshing the page.
  -stored the JSON string in browser storage using localStorage.setItem()
  -retrieved saved data using localStorage.getItem()
- 
+
+ As part of milestone 4: dynamic rendering (the homepage) i created a new dedicated index.js file for homepage functionality and linked it it to my index.html file.
+
+ -retrieved saved vault entries from localStorage using localStorage.getItem
+
+ converted stored JSON data back into a javascript array using JSON.parse
+
+ selected the homepage grid container using document.querySelector
+
+ used .slice(0, 5) to limit displayed entries to the first five items
+
+ used forEach to loop through each entry
 

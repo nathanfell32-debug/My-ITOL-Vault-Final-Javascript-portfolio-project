@@ -4,6 +4,19 @@
         <title>My ITOL Vault</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+            }
+            .card {
+                border: 1px solid #ccc;
+                padding: 20px;
+                background: #f9f9f9;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -14,13 +27,13 @@
             </nav>
         </header>
         <main>
-            <section id="vaultContainer">
-                <p>Your saved entries will appear here.</p>
-            </section>
+            <section class="grid-container" id="vaultContainer"></section>
         </main>
 
         <footer>
             <p>&copy; 2026 My ITOL Vault</p>
         </footer>
+        
+        <script src="vault.js"></script>
     </body>
 </html>

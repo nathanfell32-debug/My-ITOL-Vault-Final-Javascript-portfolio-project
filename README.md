@@ -39,6 +39,8 @@ Milestone 3: completed : saving to localStorage - Created an `entries` array to 
 
  selected the homepage grid container using document.querySelector
 
+ changed .push to .unshift in order to present newest entries cards in my array, confirmed working through console.log
+
  used .slice(0, 5) to limit displayed entries to the first five items
 
  used forEach to loop through each entry

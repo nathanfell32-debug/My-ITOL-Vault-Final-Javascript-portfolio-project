@@ -57,7 +57,7 @@ Milestone 3: completed : saving to localStorage - Created an `entries` array to 
  - tested the homepage rendering logic when more than 5 entries exist.
  - replaced .push() with .unshift() so the newest entries are added to the beginning of the array.
    
-
+Having fullfilled the milestone requirements of the project, i have now created a separate CSS file in order to make my pages having a global uniformed look, i have moved the style tags and placed the CSS within them into my CSS file, attempting to match the project design as best i can, all updates now will be CSS based as i attempt to duplicate the pages.
  used .slice(0, 5) to limit displayed entries to the first five items
 
  used forEach to loop through each entry

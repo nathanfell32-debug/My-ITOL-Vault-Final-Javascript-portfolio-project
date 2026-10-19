@@ -41,6 +41,23 @@ Milestone 3: completed : saving to localStorage - Created an `entries` array to 
 
  changed .push to .unshift in order to present newest entries cards in my array, confirmed working through console.log
 
+ Milestone 5: the full vault - completed. What i implemented
+ - created a dedicated vault.js file for the vault page.
+ - linked vault.js to vault.html
+ - retrieved saved entry data from localStorage using localStorage.getItem().
+ - converted the stored JSON string back into a JavaScript array using JSON.parse().
+ - selected the VaultContainer using document.querySelector()
+ - Used .forEach() to loop through all stored entries.
+ - Created cards dynamically using document.createElement().
+ - Applied card styling using .classList.add().
+ - Used innerHTML to display each entry's title and reflection text.
+ - Used appendChild() to add cards to the vault page.
+ - updated the vault layout to use the same grid styling as the homepage.
+
+ - tested the homepage rendering logic when more than 5 entries exist.
+ - replaced .push() with .unshift() so the newest entries are added to the beginning of the array.
+   
+
  used .slice(0, 5) to limit displayed entries to the first five items
 
  used forEach to loop through each entry

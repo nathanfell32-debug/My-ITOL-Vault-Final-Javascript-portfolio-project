@@ -1,0 +1,18 @@
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #222;
+}
+/* grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* card styling */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+}

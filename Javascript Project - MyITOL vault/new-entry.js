@@ -21,8 +21,8 @@ saveButton.addEventListener('click', () => {
         title: title,
         body: body
     };
-// add the new entry object to the entries array
-    entries.push(newEntry);
+// add the newest entry object to the entries array
+    entries.unshift(newEntry);
 // convert the entries array into JSON string so it can be stored
     const entriesJSON = JSON.stringify(entries);
 // save the JSON string in localStorage so the entries remain after a page refresh
